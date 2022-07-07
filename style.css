@@ -3,25 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  /* variaveis */
+  --text-color: #EDF2FF;
+}
+
 
 
 body{
-  background: #898c98;
+  background: linear-gradient(45deg, #2C3639, #3F4E4F, #7f1acd ,#246ce7 );
+  background-size: 300% 300%;
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
+  animation: colors 15s ease infinite;
+
 }
+
+@keyframes colors{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+
 .container{
   text-align: center;
   width: 300px;
-  margin: 60px auto;
- 
-  /* position: relative;
-  text-align: center;
-  width:40rem;
-  height: 40rem;
-  background: linear-gradient(blue,gray,green);
-   */
-
+  margin: 60px auto; 
 }
+
+
 .photo{
   border-radius:50%;
   width: 150px;
@@ -29,8 +46,13 @@ body{
   padding: 3.7px;
  border: #4263EB solid 4px;
  cursor: pointer;
+ transition:  background 400ms;
  
  
+}
+.photo:hover{
+  background: #4263EB;
+  box-shadow: 2px 2px 2px 2px rgb(56, 60, 67) ;
 }
 ul{
   list-style: none;
@@ -45,7 +67,7 @@ ul li a{
   display:flex;
   align-items: center;
   justify-content: center;
-  background: #0c228d;
+  background: #3049c7;
   color: white;
   text-transform: uppercase;
   font-size: 14px;
@@ -63,12 +85,12 @@ a:hover{
 
 .icons{
   width: 3rem;
-  display:inline;
+ padding-right: 1rem;
 }
 
 p{
   font-family: 'Roboto Mono', monospace;
-  color: #00082F;
+  
   opacity: 0.8;
   font-size: 18px;  
 }
@@ -77,14 +99,14 @@ h1{
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 32px;
-  color: #00082F;
+ 
 }
 
 footer{
   font-weight: 500;
   font-size: 20px;
-  color: #00082F;
-  opacity: 0.6;
+ 
+  opacity: 0.7;
   transition: opacity 400ms;
 }
 
@@ -99,21 +121,3 @@ footer a{
 
 
 }
- /* li{
-  padding: 0.9rem;
-  list-style: none;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(#471898 , #2d7de0 ,rgb(8, 177, 255));
-  cursor: pointer;
-  box-shadow: -5px 5px 5px  #0f7b7b ;
-
-} */
-
-/* a{
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-family:Arial, Helvetica, sans-serif;
- 
-} */
