@@ -11,7 +11,7 @@ html{
 
 
 body{
-  background: linear-gradient(45deg, #2C3639, #3F4E4F, #7f1acd ,#246ce7 );
+  background-color:#88d5d889  ;
   background-size: 300% 300%;
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
@@ -41,18 +41,18 @@ body{
 
 .photo{
   border-radius:50%;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   padding: 3.7px;
- border: #4263EB solid 4px;
+ border:#88d5d8 solid 4px;
  cursor: pointer;
- transition:  background 400ms;
+ transition: all 400ms ease;
  
  
 }
 .photo:hover{
-  background: #4263EB;
-  box-shadow: 2px 2px 2px 2px rgb(56, 60, 67) ;
+  /* background: #88d5d8; */
+  box-shadow: 0px 0px 7px 7px rgb(255, 255, 255) ;
 }
 ul{
   list-style: none;
@@ -67,7 +67,7 @@ ul li a{
   display:flex;
   align-items: center;
   justify-content: center;
-  background: #3049c7;
+  background: rgb(202, 72, 212);
   color: white;
   text-transform: uppercase;
   font-size: 14px;
@@ -79,7 +79,7 @@ ul li a{
 }
 
 a:hover{
-  background: #4263EB;
+  background: #88d5d8;
 }
 
 
@@ -95,10 +95,12 @@ p{
   font-size: 18px;  
 }
 
-h1{
+h1,h2{
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 32px;
+  color: rgb(202, 72, 212);
+  font-family:sans-serif;
  
 }
 
